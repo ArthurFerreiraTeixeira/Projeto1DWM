@@ -1,3 +1,4 @@
+/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -6,67 +7,241 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
 }
 
-.container {
-    width: 100%;
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Links e botões */
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-h1, h2 {
+.btn {
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
     text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Input e formulário */
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f44336;
+    color: #fff;
+}
+
+.header .logo h1 {
+    font-size: 24px;
+}
+
+.header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header nav a:hover {
+    background-color: #555;
+}
+
+/* Seção principal (hero) */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background-image: url('https://cdn.pixabay.com/photo/2016/12/20/18/43/sunset-1929787_960_720.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Container padrão */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilos para formulários de login, registro, agendamento */
 form {
     display: flex;
     flex-direction: column;
 }
 
-label {
+form label {
     margin-bottom: 5px;
 }
 
-input {
+form input {
     margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
-.btn {
-    padding: 10px;
-    background-color: #c53434;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* Mensagem de confirmação de agendamento */
+#confirmationMessage {
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
     text-align: center;
 }
 
-.btn:hover {
-    background-color: #c53434;
-}
-
+/* Estilos para o dashboard */
 .buttons {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.link {
-    display: block;
-    text-align: center;
+.buttons .btn {
+    width: 48%;
+}
+
+/* Lista de agendamentos */
+#appointmentsList {
     margin-top: 20px;
-    color: #c53434;
-    text-decoration: none;
+}
+
+#appointmentsList p {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos para links */
+.link {
+    display: inline-block;
+    color: #f44336;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .link:hover {
     text-decoration: underline;
+}
+
+/* Página de login e registro */
+.login-register-container {
+    margin-top: 50px;
+}
+
+.login-register-container a {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #f44336;
+}
+
+.login-register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Página de agendamentos */
+#appointmentsList p {
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
