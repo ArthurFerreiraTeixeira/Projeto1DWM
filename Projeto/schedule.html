@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Doação de Sangue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Agendar Doação de Sangue</h2>
+        <form id="scheduleForm">
+            <label for="date">Escolha a Data:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Escolha o Horário:</label>
+            <input type="time" id="time" required>
+
+            <button type="submit" class="btn">Agendar</button>
+        </form>
+        <div id="confirmationMessage"></div>
+        <a href="dashboard.html" class="link">Voltar</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
